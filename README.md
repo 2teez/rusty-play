@@ -2,7 +2,7 @@
 
 This is playing with rust programming langugage. Make use of it more and more.
 
-### Chapter
+### Chapters
 
 This will includes various rust little programs and execrise.
 
