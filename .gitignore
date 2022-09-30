@@ -1,5 +1,3 @@
-.DS_Store
-*/.DS_Store
-*.exe
 hello_world
 add2ignore
+DS_Store
