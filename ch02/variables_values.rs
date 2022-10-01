@@ -32,4 +32,7 @@ fn main() {
     let _n = 3.14;
     //_n = 5.9;  // can't assign twice to immutable variable
     println!("{}", _n);
+
+    // function usage -- Standard Library Usage:
+    println!("{} {}", str::len("abcd"), "abcd".len());
 }
