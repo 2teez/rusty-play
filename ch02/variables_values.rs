@@ -26,4 +26,10 @@ fn main() {
     failsy = 3 != 5;
 
     println!("{} {}", truth, failsy);
+
+    let mut _n = 1;
+    _n = 2;
+    let _n = 3.14;
+    //_n = 5.9;  // can't assign twice to immutable variable
+    println!("{}", _n);
 }
