@@ -34,5 +34,9 @@ fn main() {
     println!("{}", _n);
 
     // function usage -- Standard Library Usage:
-    println!("{} {}", str::len("abcd"), "abcd".len());
+    println!(
+        "Length of string `abcd`: {}, {}",
+        str::len("abcd"),
+        "abcd".len()
+    );
 }
