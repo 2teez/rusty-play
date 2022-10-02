@@ -17,4 +17,7 @@ fn main() {
             "Negative Number"
         }
     );
+
+    let value = if n > (25 / 3) { "greater." } else { "lesser." };
+    println!("{}", value);
 }
