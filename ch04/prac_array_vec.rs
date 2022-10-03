@@ -37,12 +37,12 @@ fn main() {
         }
     }
 
-    let names = vec!["timothy", "tolulope"];
+    let mut names = vec!["timothy", "tolulope"];
     println!("\n\nVec: {:?}", names);
 
-    // for name in &mut ["temi", "melchi"] {
-    //     names.append(name);
-    // }
+    for name in ["temi", "melchi"] {
+        names.push(name);
+    }
 
-    // println!("\n\nVec: {:?}", names);
+    println!("\n\nVec: {:?}", names);
 }
