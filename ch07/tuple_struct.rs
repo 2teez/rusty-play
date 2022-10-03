@@ -1,4 +1,4 @@
-// a tuple like struct
+// a struct like tuple
 // can be used like namedtuple in python
 #[derive(Debug)]
 struct Persons<'a>(&'a str, u8, char);
@@ -12,4 +12,5 @@ fn main() {
 
     let tomi = Persons("tomi", 34, 'F');
     println!("{:#?}", tomi);
+    println!("Name: {}, Gender: {}", tomi.0, tomi.2);
 }
