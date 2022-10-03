@@ -40,7 +40,7 @@ fn main() {
     let mut names = vec!["timothy", "tolulope"];
     println!("\n\nVec: {:?}", names);
 
-    for name in ["temi", "melchi"] {
+    for name in &mut ["temi", "melchi"] {
         names.push(name);
     }
 
