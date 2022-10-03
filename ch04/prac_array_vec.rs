@@ -1,4 +1,5 @@
 #[allow(unused)]
+
 fn main() {
     let x = ["a"];
     //#[allow(unconditional_panic)]
@@ -35,4 +36,13 @@ fn main() {
             print!("{}, ", name);
         }
     }
+
+    let names = vec!["timothy", "tolulope"];
+    println!("\n\nVec: {:?}", names);
+
+    // for name in &mut ["temi", "melchi"] {
+    //     names.append(name);
+    // }
+
+    // println!("\n\nVec: {:?}", names);
 }
