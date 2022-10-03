@@ -1,6 +1,9 @@
 
+from collections import namedtuple
 from enum import Enum
 import io
+
+persons = namedtuple('persons', ['name', 'age'])
 
 
 class Direction(Enum):
@@ -29,6 +32,11 @@ def main() -> None:
             case 1: print(n, "is one")
             case _ if n < 0: print(n, "is negative")
             case default: print(n, "is plural")
+
+    ppl = [persons("timothy", 23), persons("tolu", 18)]
+    print(ppl)
+
+    print(", ".join([str(p.age) for p in ppl]))
 
 
 if __name__ == '__main__':
