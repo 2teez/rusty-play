@@ -1,9 +1,9 @@
-#[allow(dead_code)]
 // a struct like tuple
 // can be used like namedtuple in python
 #[derive(Debug)]
 struct Persons<'a>(&'a str, u8, char);
 
+#[allow(dead_code)]
 #[derive(Debug)]
 struct Person {
     name: &'static str,
