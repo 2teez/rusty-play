@@ -8,7 +8,7 @@ enum Direction {
 }
 
 fn main() {
-    let direction = Direction::South;
+    let direction: Direction = Direction::South;
 
     println!(
         "{}",
@@ -19,4 +19,18 @@ fn main() {
             Direction::West => "WEST",
         }
     );
+
+    // using guards in match
+    for n in -2..=5 {
+        println!(
+            "{} {}",
+            n,
+            match n {
+                0 => "zero",
+                1 => "one",
+                _ if n < 0 => "negative",
+                _ => "plural",
+            }
+        );
+    }
 }
