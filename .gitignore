@@ -9,3 +9,4 @@ primitive_type_prac
 enum_match
 tuple_struct
 function_prac
+alloca
