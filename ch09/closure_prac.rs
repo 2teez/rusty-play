@@ -38,4 +38,14 @@ fn main() {
         summation(vec![2, 8, 0, 3, 7, 5]),
         summation([6, 9, 7, 21].to_vec())
     );
+
+    println!(
+        "{:?}",
+        (|v: &mut Vec<i32>, factor: u32| {
+            for v in v.iter_mut() {
+                *v *= factor as i32;
+            }
+            v.to_vec()
+        })(&mut vec![3, 6, 9], 5)
+    );
 }
