@@ -17,4 +17,25 @@ fn main() {
         }
     });
     println!("{:?}", arr);
+
+    // using a shorter form
+    arr.sort_by(|a, b| a.cmp(b));
+    println!("{:?}", arr);
+
+    arr.sort_by(|a, b| (-*a).cmp(&-*b));
+    println!("{:?}", arr);
+
+    let summation = |vec| -> i32 {
+        let mut sum = 0;
+        for val in vec {
+            sum += val;
+        }
+        sum
+    };
+
+    println!(
+        "{:?}, {:?}",
+        summation(vec![2, 8, 0, 3, 7, 5]),
+        summation([6, 9, 7, 21].to_vec())
+    );
 }
