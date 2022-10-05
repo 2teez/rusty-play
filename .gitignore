@@ -10,3 +10,4 @@ enum_match
 tuple_struct
 function_prac
 alloca
+closure_prac
