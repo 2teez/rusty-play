@@ -28,4 +28,10 @@ fn main() {
     for n in 0..s.len() {
         println!("{}: {:?}", n, s.as_bytes()[n]);
     }
+
+    println!("{:?}", "€".as_bytes()); // [226, 130, 172]
+                                      // see different iterators
+    println!("{:?}", "timothy".as_bytes());
+    println!("{:?}", "timothy".chars());
+    println!("{:?}", "timothy".bytes());
 }
