@@ -41,4 +41,15 @@ fn main() {
         *item += 1;
     }
     println!("{:?}", vec);
+    //
+    // Adapter
+    let nums = [66, -8, 43, 19, 0, -31];
+    println!("{:?}", nums.iter().filter(|n| *n < &0).collect::<Vec<_>>());
+    println!("{:?}", nums.iter().map(|n| n * n).collect::<Vec<_>>());
+    println!("{:?}", nums.iter().enumerate().collect::<Vec<_>>());
+}
+
+fn prnt<'a>(msg: &'a str, f: &dyn Fn() -> ()) -> () {
+    println!("{}", msg);
+    println!("{:?}", f())
 }
