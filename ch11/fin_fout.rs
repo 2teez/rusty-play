@@ -1,7 +1,7 @@
 #![allow(dead_code, unused)]
 
 use std::env::{args, vars};
-use std::io::{Write, stdin, stdout};
+use std::io::{stdin, stdout, Write};
 
 fn main() {
     println!("[{:?}] [{:?}]", args(), vars());
@@ -21,8 +21,8 @@ fn main() {
     // read a line from stdin
     stdout().write("Enter your name: ".as_bytes()).unwrap();
     let mut line = String::new();
-    let input = stdin().read_line(&mut line); 
+    let input = stdin().read_line(&mut line);
     if input.is_ok() {
-        println!("{}", input.unwrap());
+        println!("{}", line);
     }
 }
