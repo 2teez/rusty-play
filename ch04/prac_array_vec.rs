@@ -45,4 +45,9 @@ fn main() {
     }
 
     println!("\n\nVec: {:?}", names);
+
+    // display the name in names
+    for name in names {
+        println!("{}", name);
+    }
 }
