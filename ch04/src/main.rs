@@ -7,7 +7,7 @@ fn main() {
 
     let mut nnames = vec!["tim".to_string(), "tolu".to_string()];
     for name in nnames.iter_mut() {
-        *name = name.to_owned() + &" adigun".to_string();
+        *name = name.to_string() + " adigun";
     }
     println!("{:?}", nnames);
 
