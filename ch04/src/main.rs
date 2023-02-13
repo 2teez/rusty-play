@@ -10,5 +10,8 @@ fn main() {
         *name = name.to_string() + " adigun";
     }
     println!("{:?}", nnames);
+    nnames[0].make_ascii_uppercase();
+    nnames.iter_mut().for_each(|s| {s.make_ascii_uppercase()});
+    println!("{:?}", nnames);
 
 }
