@@ -7,6 +7,10 @@ fn main() {
     let words = "A town hall different from Blalablueu...";
     let (first, second) = words.split_at(21);
     println!("{} <=> {}", first, second);
+
+    let t = ("timothy", 23);
+    let b = Box::new(t);
+    println!("{:?} {:?}", b.0, t.1);
 }
 
 fn build_vector() -> Vec<i16> {
