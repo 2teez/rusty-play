@@ -21,10 +21,14 @@ fn main() {
     let lang = Pairs::from_tuple(tuple);
     println!("{:?} {:?} {:?}", tuple, lang, lang.to_tuple());
 
+    let apairs: PPairs<i32> = Pairs::new(1, "tim");
+    println!("{:?}", apairs);
 }
 
+pub type PPairs<T> = Pairs<T, &'static str>;
+
 #[derive(Debug, Clone)]
-struct Pairs<T, R> {
+pub struct Pairs<T, R> {
     first: T,
     second: R,
 }
